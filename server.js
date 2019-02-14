@@ -8,7 +8,7 @@ var server = http.createServer(function(request, response) {
 
 });
 
-server.listen((process.env.PORT || webSocketsServerPort, function() {
+server.listen(process.env.PORT || webSocketsServerPort, function() {
     console.log(new Date() + " Server is listening on port:" + webSocketsServerPort)
 });
 
